@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera J | Photography</title>
+    <meta
+      name="description"
+      content="Camera J 摄影作品展示网站，收录人像、街景与静物项目。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="Camera J 首页">
+        <span>Camera J</span>
+        <span>Photography</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="页面导航">
+        <a href="#works">Works</a>
+        <a href="#text">Text</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-visual" aria-label="首屏摄影作品">
+        <img
+          src="assets/hero-oppressive-room.png"
+          alt="雨后低光室内摄影作品"
+        />
+        <div class="hero-mark" aria-hidden="true">
+          <span>Camera J</span>
+          <span>Selected frame</span>
+        </div>
+        <a class="scroll-cue" href="#statement">Scroll</a>
+      </section>
+
+      <section id="statement" class="profile-reveal" aria-label="摄影师简介">
+        <div class="section-heading profile-heading">
+          <span>Profile</span>
+          <span>2021-2026</span>
+        </div>
+        <div class="profile-copy">
+          <p class="intro-kicker">Selected photographs, 2021-2026</p>
+          <h1>把沉默、潮湿和微弱的光留在照片里。</h1>
+          <p>
+            我拍摄城市边缘、雨后的室内、被忽略的脸和空旷的下午。照片不急着解释，
+            它们更像一段缓慢下沉的时间。
+          </p>
+        </div>
+      </section>
+
+      <section id="text" class="text-block" aria-label="摄影文字">
+        <span>Text</span>
+        <p>
+          我常常在快要没有光的时候按下快门。那时人会变慢，物体的边缘开始模糊，
+          空气里有一种不可言说的重量。相机记录的不只是场景，也是场景里没有发生的事。
+        </p>
+      </section>
+
+      <section id="works" class="works" aria-label="作品列表">
+        <div class="section-heading">
+          <span>Works</span>
+          <span>Archive</span>
+        </div>
+        <div class="work-list">
+          <article
+            class="work-item is-active"
+            data-title="Low Rooms"
+            data-year="2026"
+            data-place="Chongqing"
+            data-image="assets/hero-oppressive-room.png"
+          >
+            <a href="#project-low-rooms">
+              <span class="work-title">Low Rooms</span>
+              <span class="work-meta">Chongqing, 2026</span>
+            </a>
+          </article>
+          <article
+            class="work-item"
+            data-title="Rain Notes"
+            data-year="2025"
+            data-place="Shanghai"
+            data-image="assets/hero-oppressive-room.png"
+          >
+            <a href="#project-rain-notes">
+              <span class="work-title">Rain Notes</span>
+              <span class="work-meta">Shanghai, 2025</span>
+            </a>
+          </article>
+          <article
+            class="work-item"
+            data-title="After People"
+            data-year="2024"
+            data-place="Wuhan"
+            data-image="assets/hero-oppressive-room.png"
+          >
+            <a href="#project-after-people">
+              <span class="work-title">After People</span>
+              <span class="work-meta">Wuhan, 2024</span>
+            </a>
+          </article>
+          <article
+            class="work-item"
+            data-title="Noon Corridor"
+            data-year="2024"
+            data-place="Hangzhou"
+            data-image="assets/hero-oppressive-room.png"
+          >
+            <a href="#project-noon-corridor">
+              <span class="work-title">Noon Corridor</span>
+              <span class="work-meta">Hangzhou, 2024</span>
+            </a>
+          </article>
+          <article
+            class="work-item"
+            data-title="Grey Fever"
+            data-year="2023"
+            data-place="Nanjing"
+            data-image="assets/hero-oppressive-room.png"
+          >
+            <a href="#project-grey-fever">
+              <span class="work-title">Grey Fever</span>
+              <span class="work-meta">Nanjing, 2023</span>
+            </a>
+          </article>
+          <article
+            class="work-item"
+            data-title="Still Noise"
+            data-year="2022"
+            data-place="Tokyo"
+            data-image="assets/hero-oppressive-room.png"
+          >
+            <a href="#project-still-noise">
+              <span class="work-title">Still Noise</span>
+              <span class="work-meta">Tokyo, 2022</span>
+            </a>
+          </article>
+        </div>
+
+        <aside class="preview" aria-live="polite">
+          <img
+            id="preview-image"
+            src="assets/hero-oppressive-room.png"
+            alt="Low Rooms 摄影项目预览"
+          />
+          <div class="preview-caption">
+            <span id="preview-title">Low Rooms</span>
+            <span id="preview-meta">Chongqing, 2026</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="featured-grid" aria-label="精选照片">
+        <figure id="project-low-rooms">
+          <img
+            src="assets/hero-oppressive-room.png"
+            alt="阴暗房间外的潮湿风景"
+          />
+          <figcaption>Low Rooms, 2026</figcaption>
+        </figure>
+        <figure id="project-rain-notes">
+          <img
+            src="assets/hero-oppressive-room.png"
+            alt="低光环境中的房屋和天空"
+          />
+          <figcaption>Rain Notes, 2025</figcaption>
+        </figure>
+        <figure id="project-after-people">
+          <img
+            src="assets/hero-oppressive-room.png"
+            alt="树林中微弱的自然光"
+          />
+          <figcaption>After People, 2024</figcaption>
+        </figure>
+      </section>
+
+      <section id="about" class="about">
+        <div>
+          <span>About</span>
+          <p>
+            Camera J 是一名以纪实、人像和环境肖像为主的摄影师。长期关注城市生活中的
+            疏离感、普通人的身体姿态，以及自然光在封闭空间里的残留。
+          </p>
+        </div>
+        <div id="contact">
+          <span>Contact</span>
+          <a href="mailto:hello@camera-j.example">hello@camera-j.example</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
