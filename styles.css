@@ -178,17 +178,20 @@ main {
 }
 
 .profile-reveal {
-  min-height: 88vh;
+  min-height: 78vh;
   display: grid;
-  grid-template-columns: minmax(128px, 0.2fr) minmax(560px, 760px);
-  gap: clamp(28px, 5vw, 84px);
-  align-items: center;
-  padding: clamp(90px, 15vh, 172px) 0;
+  grid-template-columns: 1fr;
+  gap: clamp(46px, 8vw, 86px);
+  align-items: start;
+  padding: clamp(82px, 13vh, 142px) 0 clamp(76px, 12vh, 132px);
 }
 
 .profile-heading {
-  align-self: start;
-  margin-top: 22px;
+  margin-top: 0;
+}
+
+.profile-copy {
+  max-width: min(940px, 100%);
 }
 
 .section-heading {
@@ -200,10 +203,10 @@ main {
 }
 
 .profile-copy h1 {
-  max-width: 760px;
+  max-width: 880px;
   margin: 0 0 30px;
   color: #332f2a;
-  font-size: clamp(38px, 4.6vw, 66px);
+  font-size: clamp(38px, 5vw, 68px);
   font-weight: 400;
   line-height: 1.18;
   text-wrap: balance;
@@ -211,7 +214,7 @@ main {
 }
 
 .profile-copy p:not(.intro-kicker) {
-  max-width: 680px;
+  max-width: 760px;
   margin: 0;
   color: var(--soft);
   text-wrap: pretty;
@@ -403,12 +406,13 @@ figcaption {
 
   .profile-reveal {
     min-height: auto;
+    gap: 42px;
     padding-top: 92px;
   }
 
   .profile-copy h1 {
-    max-width: 12em;
-    font-size: clamp(34px, 9.2vw, 52px);
+    max-width: 100%;
+    font-size: clamp(34px, 8vw, 52px);
   }
 
   .profile-copy p:not(.intro-kicker),
